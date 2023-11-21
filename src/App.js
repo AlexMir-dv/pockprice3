@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { useRoutes } from 'react-router';
+import Layout from './common/components/Layout';
+import Home from './common/pages/Home/Home';
+import Collection from './common/pages/Collection/Collection';
+import PriceItem from './common/pages/PriceItem/PriceItem';
 
+
+const routesConifg = [
+  {
+    element:<Home />,
+    path:"/",
+  },
+  {
+    element:<Collection />,
+    path:"/collection"
+  },
+  {
+    element:<PriceItem />,
+    path:"/item"
+  }
+]
 function App() {
+  const routes = useRoutes(routesConifg)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Layout>
+        {routes}
+      </Layout>
     </div>
   );
 }
