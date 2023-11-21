@@ -1,6 +1,5 @@
 {
   "name": "pokeprice-reactjs",
-  "homepage": "https://github.com/AlexMir-dv/pokePrice",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
