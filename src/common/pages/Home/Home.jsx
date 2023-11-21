@@ -16,12 +16,13 @@ import { styled } from "@mui/material/styles";
 import InputSearch from "../../components/InputSearch";
 import TagItem from "../../components/Home/TagItem";
 import SectionCategoris, { childrenTypes } from "../../components/Home/SectionCategoris";
+import BackImgHeader from '../../../assets/Image/pokemon-grass-battle-background.jpg'
 function Home() {
   return (
     <Box>
       <HeaderHome>
         <Box sx={{ position: "relative" }}>
-          <HeaderBanner></HeaderBanner>
+          <HeaderBanner img={BackImgHeader}></HeaderBanner>
           <HeaderBannerText variant="fontSize24" color={"white"}>
             The quickest way to find and track the value of your cards
           </HeaderBannerText>
@@ -132,9 +133,9 @@ const HeaderHome = styled(Box)(({ theme }) => ({
   background: theme.palette.red.main,
 }));
 
-const HeaderBanner = styled(Box)({
+const HeaderBanner = styled(Box)(({img})=>({
   background:
-    "rgba(0,0,0,0.5) url('image/pokemon-grass-battle-background.jpg')",
+    `rgba(0,0,0,0.5) url(${img})`,
   height: "185px",
   backgroundSize: "cover",
   backgroundPosition: "center",
@@ -146,7 +147,7 @@ const HeaderBanner = styled(Box)({
     width: "100%",
     height: "100%",
   },
-});
+}))
 
 const HeaderBannerText = styled(Typography)({
   position: "absolute",
