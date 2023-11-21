@@ -2,9 +2,15 @@ import React from "react";
 import { Box, IconButton, Typography } from "@mui/material";
 import UnfoldMoreIcon from "@mui/icons-material/UnfoldMore";
 import { styled } from "@mui/material/styles";
-import LibraryAddIcon from '@mui/icons-material/LibraryAdd';
-import BrandImg from '../../assets/Image/MEW.png'
+import LibraryAddIcon from "@mui/icons-material/LibraryAdd";
+import BrandImg from "../../assets/Image/MEW.png";
+import { useLocation } from "react-router-dom";
 const Card = ({ item }) => {
+  const location = useLocation();
+
+  React.useEffect(() => {
+    console.log("items", location);
+  }, []);
   return (
     <Box mb={3}>
       <CardItem>
@@ -30,22 +36,26 @@ const Card = ({ item }) => {
           </Box>
         </CardPrice>
         {/* ADD To CARD COUNT IF EXIST */}
-        <Box sx={{display:"flex",gap:"10px"}} my={1}>
-          <BoxActions sx={{flexGrow:1}}>-</BoxActions>
-          <BoxActions sx={{flexGrow:2,justifyContent:"space-around"}}>
-            <Typography>0</Typography>
-            <IconButton size="sm">
-              <UnfoldMoreIcon fontSize="20px" />
-            </IconButton>
-          </BoxActions>
-          <BoxActions sx={{flexGrow:1}}>+</BoxActions>
-        </Box>
-        <BoxActions>
-          <Typography variant="fontSize14">Add Graded</Typography>
-          <IconButton size="small" >
-            <LibraryAddIcon fontSize="20px" color="dark"/>
-          </IconButton>
-        </BoxActions>
+        {location.pathname === "/item" && (
+          <>
+            <Box sx={{ display: "flex", gap: "10px" }} my={1}>
+              <BoxActions sx={{ flexGrow: 1 }}>-</BoxActions>
+              <BoxActions sx={{ flexGrow: 2, justifyContent: "space-around" }}>
+                <Typography>0</Typography>
+                <IconButton size="sm">
+                  <UnfoldMoreIcon fontSize="20px" />
+                </IconButton>
+              </BoxActions>
+              <BoxActions sx={{ flexGrow: 1 }}>+</BoxActions>
+            </Box>
+            <BoxActions>
+              <Typography variant="fontSize14">Add Graded</Typography>
+              <IconButton size="small">
+                <LibraryAddIcon fontSize="20px" color="dark" />
+              </IconButton>
+            </BoxActions>
+          </>
+        )}
         {/* ADD To CARD COUNT IF EXIST */}
       </CardItem>
       <Box sx={{ border: "1px solid rgb(227 225 225)", padding: "7px" }}>
@@ -87,18 +97,16 @@ const CardPrice = styled(Box)({
   boxShadow: "rgba(0, 0, 0, 0.25) 0px 0px 8px",
 });
 
-
-const BoxActions =styled(Box)({
+const BoxActions = styled(Box)({
   backgroundColor: "rgb(255, 255, 255)",
   borderRadius: "4px",
   height: "40px",
   // width: "100%",
-  display:'flex',
-  justifyContent:"center",
-  alignItems:'center',
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
   boxShadow: "rgba(0, 0, 0, 0.25) 0px 0px 8px",
-})
-
+});
 
 const CardImgBrand = styled(Box)({
   display: "flex",
