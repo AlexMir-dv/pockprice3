@@ -8,6 +8,9 @@ import Typography from "@mui/material/Typography";
 import { Box ,IconButton} from "@mui/material";
 import { styled } from "@mui/material/styles";
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+
+import CardImg from '../../../assets/Image/MEW.png'
+import BackImg from '../../../assets/Image/set-background-fallbac.jpg'
 const CardCollection = ({img}) => {
   return (
     <Card sx={{flexGrow:1,position:"relative",borderRadius:"10px"}}>
@@ -16,7 +19,7 @@ const CardCollection = ({img}) => {
             <FavoriteBorderIcon color="red" />
           </IconButton>
        </FavorateIcon>
-      <BoxCardMediaImg>
+      <BoxCardMediaImg img={BackImg}>
         <CardMediaImg
           component="img"
           alt="green iguana"
@@ -26,7 +29,7 @@ const CardCollection = ({img}) => {
       </BoxCardMediaImg>
       <CardContent sx={{display:"flex",alignItems:'center',justifyContent:"space-between",gap:"5px"}}>
         <Box sx={{display:"flex",alignItems:'center',gap:'4px'}}>
-          <img src="./image/MEW.png" width={20} height={20}/>
+          <img src={CardImg} width={20} height={20}/>
           <Typography color={'dark.main'} >Pokémon Card 151</Typography>
         </Box>
         <Box>
@@ -42,13 +45,13 @@ const CardCollection = ({img}) => {
   );
 };
 
-const BoxCardMediaImg = styled(Box)({
+const BoxCardMediaImg = styled(Box)(({img})=>({
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  backgroundImage: "url(./image/set-background-fallbac.jpg)",
+  backgroundImage: `url(${img})`,
   height: "145px",
-});
+}));
 
 const CardMediaImg = styled(CardMedia)({
   width: "107px",

@@ -1,140 +1,166 @@
+import CardImgCategory1 from '../assets/Image/card1.webp'
+import CardImgCategory2 from '../assets/Image/card2.webp'
+import CardImgCategory3 from '../assets/Image/card3.webp'
+import CardImgCategory4 from '../assets/Image/card4.webp'
+import CardImgCategory5 from '../assets/Image/card5.webp'
+
 export const listCardsItem = [
     {
-        url:'/image/card1.webp',
+        url:CardImgCategory1,
         price:'$50',
         brand:'eBay',
         count:"215 / 197",
         brand2:'Charizard ex'
     },
       {
-        url:'/image/card2.webp',
+        url:CardImgCategory2,
         price:'$43.5',
         brand:'eBay',
         count:"215 / 197",
         brand2:'Charizard ex'
     },
     {
-        url:'/image/card3.webp',
+        url:CardImgCategory3,
         price:'$76',
         brand:'eBay',
         count:"215 / 197",
         brand2:'Charizard ex'
     },
     {
-        url:'/image/card4.webp',
+        url:CardImgCategory4,
         price:'$20',
         brand:'eBay',
         count:"215 / 197",
         brand2:'Charizard ex'
     },
     {
-        url:'/image/card5.webp',
+        url:CardImgCategory5,
         price:'$40',
         brand:'eBay',
         count:"215 / 197",
         brand2:'Charizard ex'
     },
     {
-        url:'/image/card3.webp',
+        url:CardImgCategory3,
         price:'$76',
         brand:'eBay',
         count:"215 / 197",
         brand2:'Charizard ex'
     },
     {
-        url:'/image/card4.webp',
+        url:CardImgCategory4,
         price:'$20',
         brand:'eBay',
         count:"215 / 197",
         brand2:'Charizard ex'
     },
     {
-        url:'/image/card5.webp',
+        url:CardImgCategory5,
         price:'$40',
         brand:'eBay',
         count:"215 / 197",
         brand2:'Charizard ex'
     },
     {
-        url:'/image/card3.webp',
+        url:CardImgCategory3,
         price:'$76',
         brand:'eBay',
         count:"215 / 197",
         brand2:'Charizard ex'
     },
     {
-        url:'/image/card4.webp',
+        url:CardImgCategory4,
         price:'$20',
         brand:'eBay',
         count:"215 / 197",
         brand2:'Charizard ex'
     },
     {
-        url:'/image/card5.webp',
+        url:CardImgCategory5,
         price:'$40',
         brand:'eBay',
         count:"215 / 197",
         brand2:'Charizard ex'
     },
     {
-        url:'/image/card3.webp',
+        url:CardImgCategory3,
         price:'$76',
         brand:'eBay',
         count:"215 / 197",
         brand2:'Charizard ex'
     },
     {
-        url:'/image/card4.webp',
+        url:CardImgCategory4,
         price:'$20',
         brand:'eBay',
         count:"215 / 197",
         brand2:'Charizard ex'
     },
     {
-        url:'/image/card5.webp',
+        url:CardImgCategory5,
         price:'$40',
         brand:'eBay',
         count:"215 / 197",
         brand2:'Charizard ex'
     },
     {
-        url:'/image/card3.webp',
+        url:CardImgCategory3,
         price:'$76',
         brand:'eBay',
         count:"215 / 197",
         brand2:'Charizard ex'
     },
     {
-        url:'/image/card4.webp',
+        url:CardImgCategory4,
         price:'$20',
         brand:'eBay',
         count:"215 / 197",
         brand2:'Charizard ex'
     },
     {
-        url:'/image/card5.webp',
+        url:CardImgCategory5,
         price:'$40',
         brand:'eBay',
         count:"215 / 197",
         brand2:'Charizard ex'
     },
-  
     {
-        url:'/image/card3.webp',
+        url:CardImgCategory3,
         price:'$76',
         brand:'eBay',
         count:"215 / 197",
         brand2:'Charizard ex'
     },
     {
-        url:'/image/card4.webp',
+        url:CardImgCategory4,
         price:'$20',
         brand:'eBay',
         count:"215 / 197",
         brand2:'Charizard ex'
     },
     {
-        url:'/image/card5.webp',
+        url:CardImgCategory5,
+        price:'$40',
+        brand:'eBay',
+        count:"215 / 197",
+        brand2:'Charizard ex'
+    },
+    {
+        url:CardImgCategory3,
+        price:'$76',
+        brand:'eBay',
+        count:"215 / 197",
+        brand2:'Charizard ex'
+    },
+    {
+        url:CardImgCategory4,
+        price:'$20',
+        brand:'eBay',
+        count:"215 / 197",
+        brand2:'Charizard ex'
+    },
+    {
+        url:CardImgCategory5,
         price:'$40',
         brand:'eBay',
         count:"215 / 197",

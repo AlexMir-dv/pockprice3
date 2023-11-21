@@ -3,6 +3,7 @@ import { Box, IconButton, Typography } from "@mui/material";
 import UnfoldMoreIcon from "@mui/icons-material/UnfoldMore";
 import { styled } from "@mui/material/styles";
 import LibraryAddIcon from '@mui/icons-material/LibraryAdd';
+import BrandImg from '../../assets/Image/MEW.png'
 const Card = ({ item }) => {
   return (
     <Box mb={3}>
@@ -50,7 +51,7 @@ const Card = ({ item }) => {
       <Box sx={{ border: "1px solid rgb(227 225 225)", padding: "7px" }}>
         <CardImgBrand>
           <Typography variant="fontSize12400">{item.count}</Typography>
-          <img src="/image/MEW.png" width={15} height={15} />
+          <img src={BrandImg} width={15} height={15} />
         </CardImgBrand>
         <Typography variant="fontSize12">{item.brand2}</Typography>
       </Box>

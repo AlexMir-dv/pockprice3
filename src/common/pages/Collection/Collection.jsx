@@ -5,6 +5,8 @@ import Card from "../../components/Card";
 import TabsCustom from "../../components/Tabs/TabsCustom";
 import { listCardsItem } from "../../../utils/constans";
 import CardCollection from "../../components/Collection/CardCollection";
+import ImageBrandCollect from '../../../assets/Image/151.png'
+import ImageBrandCollectJap from '../../../assets/Image/japone.png'
 
 const tabs = [
   {
@@ -20,7 +22,7 @@ const tabs = [
           }}
         >
           {listCardsItem.map((item, index) => (
-            <CardCollection key={index}  img={"/image/151.png"}/>
+            <CardCollection key={index}  img={ImageBrandCollect}/>
           ))}
         </Box>
       </Container>
@@ -39,7 +41,7 @@ const tabs = [
         }}
       >
         {listCardsItem.map((item, index) => (
-          <CardCollection key={index} img={'/image/japone.png'} />
+          <CardCollection key={index} img={ImageBrandCollectJap} />
         ))}
       </Box>
     </Container>
@@ -58,7 +60,7 @@ const tabs = [
           }}
         >
           {listCardsItem.map((item, index) => (
-            <CardCollection key={index}  img={"/image/151.png"}/>
+            <CardCollection key={index}  img={ImageBrandCollect}/>
           ))}
         </Box>
       </Container>
